@@ -1,7 +1,4 @@
-#title{
-  background-color: #ff4c68;
-  color: white;
-}
+
 *{
     font-family: "Ubuntu";
 }
@@ -33,8 +30,10 @@ h1{
 }
 /* title Image */
 .title-img{
-  width:60%;
-  transform:rotate(25deg);
+margin-left: 7rem;
+width:16rem;
+transform: rotate(20deg);
+position: absolute;
 }
 
 /* features */
@@ -46,7 +45,18 @@ h3{
 .feature{
   margin-top: 3rem;
   text-align:center;
-  padding:5%;
+  padding: 5%;
+}
+#title{
+  background-color: #ff4c68;
+  color: white;
+  height:40rem;
+}
+#features-main{
+  background-color: white;
+  z-index:1;
+  position:relative;
+  top:-3rem;
 }
 p{
   color: #8f8f8f;
@@ -56,12 +66,14 @@ p{
  .icon:hover{
    color:#ff4c88;
  }
+
 /* testimonials */
 #testimonials{
   background-color:#ef8172;
   color: white;
   text-align: center;
-  padding:5rem;;
+  padding:5rem;
+
 }
 h2{
   margin: 1rem 0 4rem 0;
@@ -76,6 +88,7 @@ h2{
   margin:20px;
   margin-bottom: 5rem;
 }
+
 #press{
   background-color: #ef8172;
   text-align: center;
@@ -84,4 +97,62 @@ h2{
 .press-logo{
   width:15%;
   margin:20px 20px 50px;
+}
+.row{
+  padding:3rem;
+}
+.card-3-h2{
+  margin-bottom:1.6rem;
+}
+.pricing-info{
+  text-align: center;
+  margin-top:4rem;
+}
+.pricing-info h2{
+margin-bottom:1rem;
+}
+@media(max-width:991px){
+  .title-img{
+    position:static;
+    transform:rotate(0);
+    margin-left: 0;
+  }
+  #feature-main{
+    position:static;
+  }
+  #title{
+    height:65rem;
+    text-align: center;
+  }
+}
+#cta{
+  background-color:#ff4c68;
+  color:white;
+  text-align:center;
+}
+.cta-h3{
+  padding: 3rem 15rem 2rem 15rem;
+  font-size: 2.5rem;
+}
+
+#footer{
+  text-align:center;
+  margin-top:3rem;
+  margin-bottom: 3rem;
+}
+.footer-icon{
+  padding:1rem;
+  display:inline-block;
+  }
+.fa-twitter{
+color:#8f8f8f;
+}
+.fa-facebook{
+color:#8f8f8f;
+}
+.fa-instagram{
+color:#8f8f8f;
+}
+.fa-envelope{
+color:#8f8f8f;
 }
